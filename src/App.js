@@ -4,7 +4,7 @@ import GithubImage from './logogit.png';
 function App() {
   return (
     <div className="container text-center">
-      <h1 className="py-5 text-uppercase">Git Proff</h1>
+      <h1 className="py-5 text-uppercase">Pesquisa Jean</h1>
       <form>
       <div className="form-group">
       <div className="input-group">
