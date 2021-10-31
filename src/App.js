@@ -51,16 +51,24 @@ const handleChange = (event) => {
       height="200px"
       />
       )}
+    {userData && (
+      <div>
+        <img src={userData.avatar_url} className="responsive rounded-circle" alt=""
+      height="200px"
+      />
 
       <h1 className="pt-3"> 
-      <a href="https://github.com/Jeanlucascastro" target="_new">Jean Castro</a>
+      <a href={userData.blog} target="_new">{userData.name}</a>
       </h1>
-      <h3>Londrina</h3>
+      <h3>{userData.location}</h3>
       <p>
         <a href="https://google.com.br" target="_new" className="text-info">
-        https://google.com.br
+        {userData.blog}
           </a>
       </p>
+      </div>
+    )}
+
     </div>
   );
 }
